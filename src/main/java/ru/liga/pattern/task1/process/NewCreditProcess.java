@@ -5,7 +5,7 @@ import ru.liga.pattern.task1.entity.Employee;
 
 public class NewCreditProcess {
     public boolean result(CreditRequest creditRequest) {        // Очень упрощенно :)
-        Employee approver = null;
+        Employee approver = EmployeeSimpleFactory.createApprover(creditRequest.getSum());
         // Определить согласуюшего для подтверждения заявки
         return approver.checkCreditRequest(creditRequest);
     }
