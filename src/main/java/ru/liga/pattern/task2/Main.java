@@ -7,9 +7,8 @@ import java.math.BigDecimal;
 public class Main {
 
     public static void main(String[] args) {
-        CreditRequest request = CreditRequest.create("fip", BigDecimal.ZERO)
-                        .setSum(BigDecimal.ZERO)
-                        .setParam1("Param1")
-                        .build();
+        /*
+          Просто создать объект CreateRequest
+         */
     }
 }
