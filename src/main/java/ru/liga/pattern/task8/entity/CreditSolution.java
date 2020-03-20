@@ -9,7 +9,7 @@ public class CreditSolution {
         this.rate = rate;
     }
 
-    public boolean isCanGiveMoney() {
+    public boolean canGiveMoney() {
         return canGiveMoney;
     }
 

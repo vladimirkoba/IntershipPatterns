@@ -1,7 +1,6 @@
-package ru.liga.pattern.task8;
+package ru.liga.pattern.task8.service;
 
 import ru.liga.pattern.task8.entity.CreditSolution;
-import ru.liga.pattern.task8.entity.NewCreditSolution;
 
 public class ScoringHandler {
     private final CreditSolution creditSolution;

@@ -1,4 +1,4 @@
-package ru.liga.pattern.task8;
+package ru.liga.pattern.task8.service;
 
 import ru.liga.pattern.task8.entity.CreditSolution;
 

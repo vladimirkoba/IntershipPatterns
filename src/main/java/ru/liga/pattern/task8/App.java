@@ -1,12 +1,5 @@
 package ru.liga.pattern.task8;
 
-import ru.liga.pattern.task5.entity.ScoringEngine;
-import ru.liga.pattern.task7.lib.Scoring;
-import ru.liga.pattern.task8.entity.CreditSolution;
-import ru.liga.pattern.task8.external.ScoringSystem;
-
-import java.math.BigDecimal;
-
 public class App {
 
     /**
@@ -27,7 +20,6 @@ public class App {
 
     public static void main(String[] args) {
         // Раскомментить и сделать, чтобы работало
-
 //        ScoringSystem scoringSystem = new ScoringSystem();
 //        CreditSolution creditSolution = scoringSystem.scoringResult("Vasya", BigDecimal.ZERO);
 //        ScoringHandler scoringHandler = new ScoringHandler(creditSolution);
