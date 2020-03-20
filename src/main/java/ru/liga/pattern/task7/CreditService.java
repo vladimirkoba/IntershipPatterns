@@ -1,5 +1,9 @@
 package ru.liga.pattern.task7;
 
+import ru.liga.pattern.task7.lib.SlowScoring;
+
+import java.math.BigDecimal;
+
 public class CreditService {
 
     /**
@@ -19,5 +23,21 @@ public class CreditService {
         //  - Скоринг дополнительно только измеряет время, не логгируя ничего дополнительного и не кэшируя
         //  - Скоринг кэширует и логгирует, но не пишет время
         //  - Скоринг логирует, кэширует и пишет
+        new ScoringTime(
+                new SlowScoring())
+                .scoring("", BigDecimal.TEN);
+
+        LogScoring logScoring = new LogScoring(
+                new CachedScoring(
+                        new SlowScoring()));
+
+        logScoring.scoring("", BigDecimal.TEN);
+        logScoring.scoring("", BigDecimal.TEN);
+        logScoring.scoring("", BigDecimal.TEN);
+
+        new ScoringTime(
+                logScoring)
+                .scoring("", BigDecimal.TEN);
+
     }
 }

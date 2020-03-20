@@ -18,7 +18,8 @@ public class CreditService {
 
     public static void main(String[] args) {
         // Должно отработать быстро
-        Scoring slowScoring = new SlowScoring();
+        Scoring slowScoring = new CacheScoring();
+
         System.out.println("Результат по Васе - " + slowScoring.scoring("Вася", new BigDecimal("5000")));
         System.out.println("Результат по Васе - " + slowScoring.scoring("Вася", new BigDecimal("5000")));
         System.out.println("Результат по Васе - " + slowScoring.scoring("Вася", new BigDecimal("5000")));
