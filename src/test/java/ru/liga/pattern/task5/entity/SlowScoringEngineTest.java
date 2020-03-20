@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 
 import static org.junit.Assert.*;
 
-public class ScoringEngineTest {
+public class SlowScoringEngineTest {
     @Test
     public void petrTest() {
         assertTrue(new CreditService().isThisManEnoughGoodForCredit("Петр", BigDecimal.ONE));
