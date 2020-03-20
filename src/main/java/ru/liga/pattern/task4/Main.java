@@ -1,8 +1,6 @@
 package ru.liga.pattern.task4;
 
-import ru.liga.pattern.task4.entity.Department;
-import ru.liga.pattern.task4.entity.Employee;
-import ru.liga.pattern.task4.entity.Hr;
+import ru.liga.pattern.task4.entity.*;
 
 public class Main {
 
@@ -18,6 +16,10 @@ public class Main {
     public static void main(String[] args) {
         // Для решения задачи main можно менять!
         Hr hr = new Hr();
+
+        hr.addTransferListener(new Accounting());
+        hr.addTransferListener(new ServiceDesk());
+
         hr.transferEmployee(new Employee("Vasya"),
                 new Department("old"),
                 new Department("new"));
